@@ -60,12 +60,8 @@ def logout():
 
 @app.route('/favorites')
 def favorites():
-    # session.pop('logged_in', None)
-    # flash('You have logged out.')
-
-    return redirect(url_for('favorites'))
+    return render_template('create.html')
     
-
 
 @app.route('/create')
 def create():
@@ -74,10 +70,7 @@ def create():
 
 @app.route('/edit')
 def edit():
-    # session.pop('logged_in', None)
-    # flash('You have logged out.')
-
-    return redirect(url_for('edit'))
+        return render_template('create.html')
 
 
 @app.route('/<username>/categories')
