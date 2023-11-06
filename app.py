@@ -64,6 +64,7 @@ def favorites():
     # flash('You have logged out.')
 
     return redirect(url_for('favorites'))
+    
 
 
 @app.route('/create')
