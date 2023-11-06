@@ -60,7 +60,7 @@ def logout():
 
 @app.route('/favorites')
 def favorites():
-    return render_template('create.html')
+    return render_template('favorites.html')
     
 
 @app.route('/create')
@@ -70,7 +70,7 @@ def create():
 
 @app.route('/edit')
 def edit():
-        return render_template('create.html')
+        return render_template('edit.html')
 
 
 @app.route('/<username>/categories')
