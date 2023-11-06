@@ -131,6 +131,12 @@ a{
     font-size: 20px;
     font-style: italic;
 }
+.navlinks a {
+    color: #fff;
+}
+.navlinks a:hover {
+    background-color: #858181;
+}
 .navlogo{
     display: flex;
     align-items: center;

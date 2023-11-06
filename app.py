@@ -58,6 +58,30 @@ def logout():
     return redirect(url_for('login'))
 
 
+@app.route('/favorites')
+def favorites():
+    # session.pop('logged_in', None)
+    # flash('You have logged out.')
+
+    return redirect(url_for('favorites'))
+
+
+@app.route('/create')
+def create():
+    # session.pop('logged_in', None)
+    # flash('You have logged out.')
+
+    return redirect(url_for('create'))
+
+
+@app.route('/edit')
+def edit():
+    # session.pop('logged_in', None)
+    # flash('You have logged out.')
+
+    return redirect(url_for('edit'))
+
+
 @app.route('/<username>/categories')
 def categories(username):
     user = users[session['username']]
