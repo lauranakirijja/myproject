@@ -1,0 +1,236 @@
+* {
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Mooli', sans-serif;
+  }
+
+@import url('/fonts/Mooli/Mooli-Regular.ttf');
+/* @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap'); */
+
+.body{
+    padding: 0 20rem;
+    background-color: #D9D9D9;
+    /* text-align: center; */
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+.logo{
+    width: 76px;
+    height: 76px;
+    border-radius: 95px;
+}
+.heading{
+    font-size: 50px;
+    text-align: center;
+}
+.CA{
+    text-align: center;
+}
+.button1{
+    display: flex;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+.signup-background{
+    background-image: linear-gradient(rgba(135, 140, 160, 0.6),rgba(135, 140, 160, 0.6)),url(images/buffet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 76vh;
+    border-radius: 30px;
+    margin-top: 1.5rem;
+    position:relative;
+    padding-top: 25px;  
+    padding: 25px 8rem 0px;
+}
+.element{
+    margin: 1rem 0;
+    width: 100%;
+}
+.element label{
+    font-weight: 600;
+}
+.element input{
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    width: 100%;
+    background-color: #fff;
+    padding: 0.5rem;
+    border: 1px solid #6b7280;
+    border-radius: 35px;
+    text-align: center;
+}
+.banner{
+    padding-top : 2rem;
+}
+.button1{
+    background-color:#A00C0C;
+    padding: 10px;
+    border-radius: 20px;
+    color: #fff;
+    border: none;
+}
+.body2{
+    padding: 0 20rem;
+    background-color: #D9D9D9;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    justify-content: center;
+}
+.banner2{
+    padding-top : 2rem;
+}
+.signup-background2{
+    background-image: linear-gradient(rgba(135, 140, 160, 0.7),rgba(135, 140, 160, 0.7)),url(images/buffet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70%;
+    border-radius: 30px;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    position: relative;
+}
+.loginheading{
+    font-size: 50px;
+}
+.form2 label{
+    font-size: 20px;
+}
+.smaller-logo{
+    width: 50px;
+    height: 52px;
+    border-radius: 95px;
+}
+.categories-body{
+    width: 100%;
+}
+.navbar{
+    margin:auto;
+    padding: 8px 2rem;
+    display: flex;
+    flex-direction:row;
+    background-color: #A00C0C;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.navlinks{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+    font-size: 20px;
+    font-style: italic;
+}
+.navlogo{
+    display: flex;
+    align-items: center;
+}
+.navlogoheading{
+    font-size: 30px;
+    padding-left: 15px;
+    font-style: italic;
+}
+.bar{
+    color: black;
+}
+.searchbar{
+    display: flex;
+    text-align: center;
+    justify-items: center;
+}
+.search{
+    width:770px;
+    height:50px;
+    text-align: center;
+    margin: 30px 0px 0px auto;
+    background-color: #DADDDE;
+    border: none;
+    word-spacing: 20px;
+    letter-spacing: 15px;
+    font-style: italic;
+    font-size: 20px;
+    color: #858181;
+    
+}
+.search-icon{
+    width: 76px;
+    height: 50px;
+    background-color: #C5C1C1;
+    margin: 30px auto 0px 0px;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.category-image{
+    padding-bottom: 30px;
+}
+.back-to-top{
+    font-weight: lighter;
+    font-size: medium;
+    color: #A00C0C;
+    font-style: italic;
+    text-decoration: underline;
+}
+.recipe-heading {
+    padding: 20px 6.5rem 0px;
+}
+.heart{
+    padding-left: 170px;
+}
+.image-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly ;
+    padding-top: 10px;
+    padding-left: 2.5rem;
+}
+.recipe-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly ;
+    padding-top: 10px;
+    padding-left: 2.5rem;
+}
+.recipe-image{
+    width: 250px;
+    height: 300px;
+    justify-content: space-between;
+}
+.back{
+    color: #fff;
+}
+.top-image-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.top-pic{
+    width: 500px;
+    height: 300px;
+    margin: 20px auto;
+}
+.steps-bg{
+    background-color: #D9D9D9;
+    height: 1500px;
+    width: 1348px;
+}
+.ed_recipe{
+    text-align: center;
+    color: #A00C0C;
+    font-weight: bold;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}"/>
+  </head>
+  <body>
+    <div class="body2">
+      <section class="banner2">
+        <h1 class="heading">
+          YUMMY <img src="{{url_for('static', filename='images/buffet.jpg')}}" alt="logo" class="logo" /> RECIPES
+        </h1>
+      </section>
+      {% for message in get_flashed_messages() %}
+            <div style="background-color: dodgerblue;">
+                {{ message }}
+            </div>
+        {% endfor %}
+      <div class="signup-background2">
+        <form action="" class="form2" method="post">
+          <h2 class="loginheading">ENTER <br />LOGIN DETAILS</h2>
+          <div class="element">
+            <label for="username">USERNAME:</label>
+            <input type="username" id="username" name="username" placeholder="enter your username" />
+          </div>
+          <div class="element">
+            <label for="password">PASSWORD:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="enter your password"
+            />
+          </div>
+          <button class="button1" type="submit">LOG IN</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

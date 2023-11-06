@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>recipes page</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}"/>
+  </head>
+  <body>
+    <div class="recipe-body">
+      <div class="navbar">
+        <div class="navlogo">
+          <img src="{{url_for('static', filename='images/buffet.jpg')}}" alt="logo" class="smaller-logo" />
+          <h5 class="navlogoheading">YUMMY RECIPES</h5>
+        </div>
+        <ul class="navlinks">
+          <li>
+            <a href="">
+            <div class="back">BACK</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="choose-recipe">
+        <h3 class="recipe-heading">BREAKFAST</h3>
+        <div class="image-container">
+        <div class="recipe-image">
+            <img
+              src="{{url_for('static', filename='images/bf2.jfif')}}"
+              alt="bfast-image"
+              width="250px"
+              height="300px"
+            />
+        </div>
+        <div class="recipe-image">
+            <img
+              src="{{url_for('static', filename='images/bf3.jfif')}}"
+              alt="bfast-image"
+              width="250px"
+              height="300px"
+            />
+        </div>
+        <div class="recipe-image">
+            <img
+              src="{{url_for('static', filename='images/samosaz.jpg')}}"
+              alt="bfast-image"
+              width="250px"
+              height="300px"
+            />
+        </div>
+        <div class="recipe-image">
+            <img
+              src="{{url_for('static', filename='images/rolex.jfif')}}"
+              alt="bfast-image"
+              width="250px"
+              height="300px"
+            />
+        </div>
+      </div>
+        <div class="recipe-details">
+        <div class="info">
+            <br>
+            <a href="">
+          <p>view</a> <span class="heart">emoji</span></p>
+          <p class="recipe-name">English pancakes</p>
+        </div>
+          <div class="info">
+              <br>
+              <a href="">
+            <p>view</a> <span class="heart">emoji</span></p>
+            <p class="recipe-name">Omelette</p>
+          </div>
+
+          <div class="info">
+              <br>
+              <a href="">
+            <p>view</a> <span class="heart">emoji</span></p>
+            <p class="recipe-name">samosas</p>
+          </div>
+          <div class="info">
+              <br>
+              <a href="">
+            <p>view</a> <span class="heart">emoji</span></p>
+            <p class="recipe-name">rolex</p>
+          </div>
+        </div>
+      
+    </div>
+  </body>
+</html>

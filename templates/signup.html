@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Yummy Recipes</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}"/>
+  </head>
+  <body>
+    <div class="body">
+      <section class="banner">
+        <h1 class="heading">
+          YUMMY <img src="{{url_for('static', filename='images/buffet.jpg')}}" alt="logo" class="logo" /> RECIPES
+        </h1>
+      </section>
+      {% for message in get_flashed_messages() %}
+            <div style="background-color: tomato;">
+                {{ message }}
+            </div>
+        {% endfor %}
+      <div class="signup-background">
+        <form action="" class="form" method="post">
+          <h3 class="CA">CREATE ACCOUNT</h3>
+          <div class="element">
+            <label>FULL NAME:</label>
+            <input type="text" name="fullname" placeholder="enter your  full name" />
+          </div>
+          <div class="element">
+            <label>USER NAME:</label>
+            <input type="text" name="username" placeholder="enter your user name" />
+          </div>
+          <div class="element">
+            <label>EMAIL:</label>
+            <input type="email" name="email" placeholder="enter your email" />
+          </div>
+          <div class="element">
+            <label>PASSWORD:</label>
+            <input
+              type="password"
+              name="password"
+              placeholder="enter your password"
+            />
+          </div>
+          <div class="element">
+            <label>CONFIRM PASSWORD:</label>
+            <input type="text" name="confirm_password" placeholder="confirm password" />
+          </div>
+            <button class="button1" type="submit">SIGN UP</button>
+          </a>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
