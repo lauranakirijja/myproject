@@ -68,10 +68,7 @@ def favorites():
 
 @app.route('/create')
 def create():
-    # session.pop('logged_in', None)
-    # flash('You have logged out.')
-
-    return redirect(url_for('create'))
+    return render_template('create.html')
 
 
 @app.route('/edit')
