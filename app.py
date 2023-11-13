@@ -58,6 +58,11 @@ def logout():
     return redirect(url_for('login'))
 
 
+@app.route('/back')
+def back():
+    return render_template('categories.html')
+
+
 @app.route('/favorites')
 def favorites():
     return render_template('favorites.html')
@@ -86,5 +91,6 @@ def recipe_page():
 @app.route('/view')
 def view():
     return render_template('view.html')
+
 
 
