@@ -63,6 +63,11 @@ def back():
     return render_template('categories.html')
 
 
+@app.route('/category_name')
+def category_name():
+    return render_template('recipe_page.html')
+
+
 @app.route('/favorites')
 def favorites():
     return render_template('favorites.html')
@@ -92,51 +97,66 @@ def recipe_page():
 def view():
     return render_template('view.html')
 
+'''
+#PASSWORD VALIDATION
+import string
+punc_marks =string.punctuation
+lower_case = string.ascii_lowercase
+upper_case = string.ascii_uppercase
+digits = string.digits
 
-#Password validation
-def password_check(password):
-     
-    SpecialSym =['$', '@', '#', '%']
-    val = True
-     
-    if len(password) < 6:
-        print('length should be at least 6')
-        val = False
-         
-    if len(password) > 20:
-        print('length should be not be greater than 8')
-        val = False
-         
-    if not any(char.isdigit() for char in password):
-        print('Password should have at least one numeral')
-        val = False
-         
-    if not any(char.isupper() for char in password):
-        print('Password should have at least one uppercase letter')
-        val = False
-         
-    if not any(char.islower() for char in password):
-        print('Password should have at least one lowercase letter')
-        val = False
-         
-    if not any(char in SpecialSym for char in password):
-        print('Password should have at least one of the symbols $@#')
-        val = False
-    if val:
-        return val
- 
-# Main method
-def main():
-    password = 'Geek12@'
-     
-    if (password_check(password)):
-        print("Password is valid")
+
+# print(punc_marks, lower_case, upper_case, digits, sep='\n')
+
+username = input("Enter your username: ")
+password = input("Enter your password: ")
+print(password)
+
+mycounts_p = []
+mycounts_l = []
+mycounts_u = []
+mycounts_d = []
+# check if the password length is >= 8 characters
+if len(password) >=8:
+  for x in punc_marks:
+    if x in userpass:
+        mycount_p = 1
+        mycounts_p.append(mycount_p)
     else:
-        print("Invalid Password !!")
-         
-# Driver Code        
-if __name__ == '__main__':
-    main()
+      mycount_p = 0
+      mycounts_p.append(mycount_p)
+      
+  for y in lower_case:
+    if y in userpass:
+      mycount_l = 1
+      mycounts_l.append(mycount_l)
+    else:
+      mycount_l = 0
+      mycounts_l.append(mycount_l)
+      
+  for z in upper_case:
+    if z in userpass:
+      mycount_u = 1
+      mycounts_u.append(mycount_u)
+    else:
+      mycount_u = 0
+      mycounts_u.append(mycount_u)
+      
+  for m in digits:
+    if m in userpass:
+      mycount_d = 1
+      mycounts_d.append(mycount_d)
+    else:
+      mycount_d = 0
+      mycounts_d.append(mycount_d)
 
-
-
+#     print(mycounts_p, mycounts_l, mycounts_d, mycounts_u, sep="\n")
+#     final_list = max(mycounts_p) + max(mycounts_l) + max(mycounts_d) + max(mycounts_u)
+#     print(final_list)
+#     if final_list >=4:
+#         print("You've logged in successfully")
+#     else:
+#         print("Invalid password")
+# else:
+#   print("Password must be 8 characters or more!!!")
+'''

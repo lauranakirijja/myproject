@@ -29,12 +29,6 @@
           <li>
             <div class="create"><a href="{{ url_for('create') }}">Create</a></div>
           </li>
-          <li>
-            <div class="bar">|</div>
-          </li>
-          <li>
-            <div class="edit_category"><a href="{{ url_for('edit') }}">Edit</a></div>
-          </li>
           <li> 
             <div class="bar">|</div>
           </li>
@@ -48,7 +42,7 @@
         <div class="search-icon"></div>
       </div>
       <div class="category">
-        <p class="category-name">BREAKFAST</p>
+        <p class="category-name"><a href="{{ url_for('category_name') }}">BREAKFAST</a></p>
         <div class="category-image">
           <img
             src="{{url_for('static', filename='images/bf1.jfif')}}"
@@ -57,7 +51,7 @@
             height="300px"
           />
         </div>
-        <p class="category-name">ASIAN</p>
+        <p class="category-name"><a href="{{ url_for('category_name') }}">ASIAN</a></p>
         <div class="category-image">
           <img
             src="{{url_for('static', filename='images/Asian 1.jfif')}}"
@@ -66,7 +60,7 @@
             height="300px"
           />
         </div>
-        <p class="category-name">LUNCH</p>
+        <p class="category-name"><a href="{{ url_for('category_name') }}">LUNCH</a></p>
         <div class="category-image">
           <img
             src="{{url_for('static', filename='images/ug local2.jfif')}}"
@@ -75,7 +69,7 @@
             height="300px"
           />
         </div>
-        <p class="category-name">VEGAN</p>
+        <p class="category-name"><a href="{{ url_for('category_name') }}">VEGAN</a></p>
         <div class="category-image">
           <img
             src="{{url_for('static', filename='images/veg2.jfif')}}"
@@ -84,7 +78,7 @@
             height="300px"
           />
         </div>
-        <p class="category-name">FAST FOODS</p>
+        <p class="category-name"><a href="{{ url_for('category_name') }}">FAST FOODS</a></p>
         <div class="category-image">
           <img
             src="{{url_for('static', filename='images/fastfoods3.jfif')}}"
@@ -93,7 +87,7 @@
             height="300px"
           />
         </div>
-        <p class="category-name">DESSERTS</p>
+        <p class="category-name"><a href="{{ url_for('category_name') }}">DESSERTS</a></p>
         <div class="category-image">
           <img
             src="{{url_for('static', filename='images/dessert1.jfif')}}"
@@ -103,6 +97,7 @@
           />
         </div>
         <a href="">
+        <!-- find out how to get back to top -->
           <p><span class="back-to-top">Back to top</span></p>
         </a>
       </div>
