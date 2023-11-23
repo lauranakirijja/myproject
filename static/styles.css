@@ -240,3 +240,7 @@ a{
     color: #A00C0C;
     font-weight: bold;
 }
+.recipeCreationForm{
+    align-self: center;
+    text-align: center;
+}
