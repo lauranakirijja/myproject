@@ -58,7 +58,7 @@ def logout():
     return redirect(url_for('login'))
 
 
-@app.route('/back')
+@app.route('/categories')
 def back():
     return render_template('categories.html')
 
